@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dc5ce17df1a3ce0959b8e72365dac83e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_dc5ce17df1a3ce0959b8e72365dac83e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_dc5ce17df1a3ce0959b8e72365dac83e = L.map(
+                "map_dc5ce17df1a3ce0959b8e72365dac83e",
+                {
+                    center: [40.0, -3.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f7c8a175ad99d8d310229c31b79847d5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f7c8a175ad99d8d310229c31b79847d5.addTo(map_dc5ce17df1a3ce0959b8e72365dac83e);
+        
+    
+            var marker_cluster_2c106be8b4cd4d84ff003833d950ff76 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_3e8d7cb18a687a5d3fbe92f3808d8f9f = L.marker(
+                [37.5443, -4.7278],
+                {
+}
+            ).addTo(marker_cluster_2c106be8b4cd4d84ff003833d950ff76);
+        
+    
+            var icon_23dab4da7c41ca68c580bbea274943f8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_04fe5e416c85fe8ba240aad6fb0a8c98 = L.popup({
+  "maxWidth": 400,
+  "autoClose": false,
+  "closeOnClick": false,
+});
+
+        
+            
+                var html_f8d52543a186972167c3ce947cd5d2df = $(`<div id="html_f8d52543a186972167c3ce947cd5d2df" style="width: 100.0%; height: 100.0%;">     <style>         .popup-container {             max-height: 300px;             overflow-y: auto;         }         .popup-table {             font-family: Arial, sans-serif;             font-size: 12px;             border-collapse: collapse;             width: 100%;         }         .popup-table td {             border-bottom: 1px solid #ddd;             padding: 4px;         }         .popup-table tr:last-child td {             border-bottom: none;         }     </style>     <div class='popup-container'>     <table class='popup-table'>         <tr>             <td><b>En Los Limites De La Violencia (Iii): La Violencia Lenta De Los Imperios Modernos</b> (Universidad Pablo de Olavide de Sevilla)<br>                 IP: <span style="color:blue; font-weight:bold;">Igor Pérez Tostado</span><br>                 Financiación: 49126 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=3" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>A Condena De Los Excluidos: Fronteras Institucionales De Los Derechos Humanos</b> (Universidad de Málaga)<br>                 IP: <span style="color:blue; font-weight:bold;">Alberto Daunis Rodríguez</span><br>                 Financiación: 24200 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=8" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Violencia Contra Las Mujeres: Consecuencias Para Su Bienestar Psicosocial</b> (Universidad de Granada)<br>                 IP: <span style="color:blue; font-weight:bold;">Francisca Exposito </span><br>                 Financiación: 108658 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=16" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Competencias Clave Del Profesorado Para La Prevencion De Las Ciberconductas Antisociales Del Alumnado En La Eso</b> (Universidad de Córdoba)<br>                 IP: <span style="color:blue; font-weight:bold;">Vicente J. Llorent</span><br>                 Financiación: 31.097 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=23" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Estabilidad Y Cambio De La Conducta Agresiva En La Infancia Y La Niñez: La Influencia Del Entrenamiento En Inteligencia Emocional</b> (Universidad de Granada)<br>                 IP: <span style="color:blue; font-weight:bold;">Rosario Cabello González</span><br>                 Financiación: 53240 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=41" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Violencia Filio-Parental En La Adolescencia: Deteccion, Perfiles Psicosociales Y Actuacion</b> (Universidad de Sevilla)<br>                 IP: <span style="color:blue; font-weight:bold;">María Victoria Hidalgo García</span><br>                 Financiación: 38.357 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=42" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Secuelas Neuropsicologicas Y Cerebrales Asociadas A Golpes Repetidos En El Craneo En Mujeres Victimas De Violencia De Genero</b> (Universidad de Granada)<br>                 IP: <span style="color:blue; font-weight:bold;">Juan Verdejo Román</span><br>                 Financiación: 114.708 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=46" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Prevencion Transcultural De Las Ciberviolencias En Parejas Adolescentes. Desarrollo Y Evaluacion De Un Programa Virtual Y Comunitario</b> (Universidad de Almería)<br>                 IP: <span style="color:blue; font-weight:bold;">Josefa Lozano Martínez</span><br>                 Financiación: 45875 euros<br>                 Año: 2022<br>                 <a href="resumenes.html?id=55" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Violencias Contra Las Mujeres: Analisis Psicosocial De Nuevas Formas De Expresion Y Mecanismos Explicativos</b> (Universidad de Granada)<br>                 IP: <span style="color:blue; font-weight:bold;">Hugo Carretero Dios </span><br>                 Financiación: 88125 euros<br>                 Año: 2022<br>                 <a href="resumenes.html?id=64" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Secuelas Neuropsicologicas En Hijos E Hijas De Mujeres Victimas De Violencia De Genero (Believe-Child)</b> (Universidad de Granada)<br>                 IP: <span style="color:blue; font-weight:bold;">Inmaculada María Teva Álvarez</span><br>                 Financiación: 115000 euros<br>                 Año: 2022<br>                 <a href="resumenes.html?id=65" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>La (Dis)Regulacion Emocional En El Trastorno De Estres Post-Traumatico Complejo En Mujeres Supervivientes De Violencia De Genero: Mecanismos Cerebrales Y App Para Mejorarla</b> (Universidad de Granada)<br>                 IP: <span style="color:blue; font-weight:bold;">Miguel Pérez García</span><br>                 Financiación: 187500 euros <br>                 Año: 2022<br>                 <a href="resumenes.html?id=66" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>El Papel Del Funcionamiento Ejecutivo En El Trastorno De Estres Postraumatico Complejo En Mujeres Supervivientes De Violencia De Genero</b> (Universidad de Granada)<br>                 IP: <span style="color:blue; font-weight:bold;">Natalia Adriana Hidalgo Ruzzante </span><br>                 Financiación: 124875 euros <br>                 Año: 2022<br>                 <a href="resumenes.html?id=67" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>El Papel De Los Sistemas De Control De Gestion Para Evitar Comportamientos Disfuncionales En El Cumplimiento De Los Objetivos De Desarrollo Sostenible En Las Organizaciones</b> (UNIVERSIDAD PABLO DE OLAVIDE, DE SEVILLA)<br>                 IP: <span style="color:blue; font-weight:bold;">Laura María Gómez Ruiz</span><br>                 Financiación: 57.500 euros<br>                 Año: 2022<br>                 <a href="resumenes.html?id=87" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>La (Dis)Regulacion Emocional En El Trastorno De Estres Post- Traumatico Complejo En Mujeres Supervivientes De Violencia De Genero: Mecanismos Cerebrales Y App Para Mejorarla</b> (Universidad de Granada)<br>                 IP: <span style="color:blue; font-weight:bold;">MIGUEL PÉREZ GARCÍA</span><br>                 Financiación: 187.500 euros<br>                 Año: 2022<br>                 <a href="resumenes.html?id=93" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Motivaciones,Violencia De Pareja Y Sus Consecuencias (Moviocon): Desarrollo Y Validacion De Una Herramienta Para Esclarecer El Debate De La Simetria De Genero En La Violencia</b> (Universidad de Granada)<br>                 IP: <span style="color:blue; font-weight:bold;">ANTONELLA LUDMILA ZAPATA CALVENTE</span><br>                 Financiación: 25.000 euros<br>                 Año: 2023<br>                 <a href="resumenes.html?id=104" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Politicas Feministas: Analisis De Practicas No Punitivas Y Modelos Alternativos En El Contexto De Las Violencias Machistas</b> (Universidad de Granada)<br>                 IP: <span style="color:blue; font-weight:bold;">ANA ALCÁZAR CAMPOS</span><br>                 Financiación: 81.250 euros<br>                 Año: 2023<br>                 <a href="resumenes.html?id=105" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Prevencion De La Conducta Suicida A Traves De Los Procesos De Comunicacion Efectiva Y Risk Analytics</b> (Universidad de Málaga)<br>                 IP: <span style="color:blue; font-weight:bold;">José Ignacio Peláez Sánchez</span><br>                 Financiación: 112.500 euros<br>                 Año: 2023<br>                 <a href="resumenes.html?id=108" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Uso Seguro Y No Violento De Las Redes Sociales En Adolescentes: Analisis De Los Factores Asociados Y Su Impacto En La Actuacion Psicoeducativa</b> (Universidad de Sevilla)<br>                 IP: <span style="color:blue; font-weight:bold;">Mónica Ojeda Pérez</span><br>                 Financiación: 100.000 euros<br>                 Año: 2023<br>                 <a href="resumenes.html?id=109" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Tecnicas Cripto-Biometricas Y Soluciones Hardware Para Carteras De Identidades Auto-Soberanas Con Alto Nivel De Seguridad</b> (Universidad de Sevilla)<br>                 IP: <span style="color:blue; font-weight:bold;">Ángel Barriga Barros</span><br>                 Financiación: 184.500 euros<br>                 Año: 2023<br>                 <a href="resumenes.html?id=110" target="_blank">Leer Resumen</a>             </td>         </tr></table></div></div>`)[0];
+                popup_04fe5e416c85fe8ba240aad6fb0a8c98.setContent(html_f8d52543a186972167c3ce947cd5d2df);
+            
+        
+
+        marker_3e8d7cb18a687a5d3fbe92f3808d8f9f.bindPopup(popup_04fe5e416c85fe8ba240aad6fb0a8c98)
+        ;
+
+        
+    
+    
+                marker_3e8d7cb18a687a5d3fbe92f3808d8f9f.setIcon(icon_23dab4da7c41ca68c580bbea274943f8);
+            
+    
+            var marker_f4c40361077a145c6531cae7e372fa2a = L.marker(
+                [41.5976, -0.9057],
+                {
+}
+            ).addTo(marker_cluster_2c106be8b4cd4d84ff003833d950ff76);
+        
+    
+            var icon_9f7722737032a1e2c790f6392e8220ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_04e0303fd47798278e768fa7efde2529 = L.popup({
+  "maxWidth": 400,
+  "autoClose": false,
+  "closeOnClick": false,
+});
+
+        
+            
+                var html_7c3cff4abb71675968eca6212e9289a5 = $(`<div id="html_7c3cff4abb71675968eca6212e9289a5" style="width: 100.0%; height: 100.0%;">     <style>         .popup-container {             max-height: 300px;             overflow-y: auto;         }         .popup-table {             font-family: Arial, sans-serif;             font-size: 12px;             border-collapse: collapse;             width: 100%;         }         .popup-table td {             border-bottom: 1px solid #ddd;             padding: 4px;         }         .popup-table tr:last-child td {             border-bottom: none;         }     </style>     <div class='popup-container'>     <table class='popup-table'>         <tr>             <td><b>El Derecho Penal Ante Los Retos Actuales De La Biomedicina</b> (Universidad de Zaragoza)<br>                 IP: <span style="color:blue; font-weight:bold;">Asier Urruela Mora</span><br>                 Financiación: 60.000 euros<br>                 Año: 2022<br>                 <a href="resumenes.html?id=84" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Blockchain Y Derecho Societario (2). Bigdata, Fintech Y La Proteccion Del Usuario De Los Servicios Financieros</b> (Universidad de Zaragoza)<br>                 IP: <span style="color:blue; font-weight:bold;">  Pedro Bueso Guillen- Reyes Pala Laguna  </span><br>                 Financiación: 52.500 euros<br>                 Año: 2022<br>                 <a href="resumenes.html?id=85" target="_blank">Leer Resumen</a>             </td>         </tr></table></div></div>`)[0];
+                popup_04e0303fd47798278e768fa7efde2529.setContent(html_7c3cff4abb71675968eca6212e9289a5);
+            
+        
+
+        marker_f4c40361077a145c6531cae7e372fa2a.bindPopup(popup_04e0303fd47798278e768fa7efde2529)
+        ;
+
+        
+    
+    
+                marker_f4c40361077a145c6531cae7e372fa2a.setIcon(icon_9f7722737032a1e2c790f6392e8220ba);
+            
+    
+            var marker_6120cf42acd2062cd6bc752c5784acbd = L.marker(
+                [43.3614, -5.8593],
+                {
+}
+            ).addTo(marker_cluster_2c106be8b4cd4d84ff003833d950ff76);
+        
+    
+            var icon_5c18351135e71240530e41778c567b35 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b9825ad4150d4692192798eda712ee1a = L.popup({
+  "maxWidth": 200,
+  "autoClose": false,
+  "closeOnClick": false,
+});
+
+        
+            
+                var html_4864a4f45e4e99886e78928eff1f7740 = $(`<div id="html_4864a4f45e4e99886e78928eff1f7740" style="width: 100.0%; height: 100.0%;">No hay proyectos registrados.</div>`)[0];
+                popup_b9825ad4150d4692192798eda712ee1a.setContent(html_4864a4f45e4e99886e78928eff1f7740);
+            
+        
+
+        marker_6120cf42acd2062cd6bc752c5784acbd.bindPopup(popup_b9825ad4150d4692192798eda712ee1a)
+        ;
+
+        
+    
+    
+                marker_6120cf42acd2062cd6bc752c5784acbd.setIcon(icon_5c18351135e71240530e41778c567b35);
+            
+    
+            var marker_352140795e3cc54a28d6334e2e7f0dbb = L.marker(
+                [39.6953, 3.0176],
+                {
+}
+            ).addTo(marker_cluster_2c106be8b4cd4d84ff003833d950ff76);
+        
+    
+            var icon_dee93b292c421c1003c33dcbd1e970a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b70ca06dfe68d39a82a593389c4e1595 = L.popup({
+  "maxWidth": 400,
+  "autoClose": false,
+  "closeOnClick": false,
+});
+
+        
+            
+                var html_3d0348fb787b6f60cbfa7f135717cfaf = $(`<div id="html_3d0348fb787b6f60cbfa7f135717cfaf" style="width: 100.0%; height: 100.0%;">     <style>         .popup-container {             max-height: 300px;             overflow-y: auto;         }         .popup-table {             font-family: Arial, sans-serif;             font-size: 12px;             border-collapse: collapse;             width: 100%;         }         .popup-table td {             border-bottom: 1px solid #ddd;             padding: 4px;         }         .popup-table tr:last-child td {             border-bottom: none;         }     </style>     <div class='popup-container'>     <table class='popup-table'>         <tr>             <td><b>Servicios De Seguridad Basados En La Tecnologia Blockchain</b> (Universidad de las Islas Baleares)<br>                 IP: <span style="color:blue; font-weight:bold;">María Francisca Hinajeros Campos</span><br>                 Financiación: 75383 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=5" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Victimización Asociada A Acoso Escolar En Alumnado Con Necesidades Específicas De Apoyo Educativo Relacionadas Con Dificultades Del Lenguaje</b> (Universidad de las Islas Baleares)<br>                 IP: <span style="color:blue; font-weight:bold;">Daniel Adrover Roig</span><br>                 Financiación: 61952 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=49" target="_blank">Leer Resumen</a>             </td>         </tr></table></div></div>`)[0];
+                popup_b70ca06dfe68d39a82a593389c4e1595.setContent(html_3d0348fb787b6f60cbfa7f135717cfaf);
+            
+        
+
+        marker_352140795e3cc54a28d6334e2e7f0dbb.bindPopup(popup_b70ca06dfe68d39a82a593389c4e1595)
+        ;
+
+        
+    
+    
+                marker_352140795e3cc54a28d6334e2e7f0dbb.setIcon(icon_dee93b292c421c1003c33dcbd1e970a6);
+            
+    
+            var marker_e7c600168a08328b32d0085b598da56b = L.marker(
+                [28.2916, -16.6291],
+                {
+}
+            ).addTo(marker_cluster_2c106be8b4cd4d84ff003833d950ff76);
+        
+    
+            var icon_d48cb7f72432a2b7dba465dd44c829c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1bf295b7e984591fbe7b3668f7b03574 = L.popup({
+  "maxWidth": 400,
+  "autoClose": false,
+  "closeOnClick": false,
+});
+
+        
+            
+                var html_4c6239727b42142941da9f2b7b57418d = $(`<div id="html_4c6239727b42142941da9f2b7b57418d" style="width: 100.0%; height: 100.0%;">     <style>         .popup-container {             max-height: 300px;             overflow-y: auto;         }         .popup-table {             font-family: Arial, sans-serif;             font-size: 12px;             border-collapse: collapse;             width: 100%;         }         .popup-table td {             border-bottom: 1px solid #ddd;             padding: 4px;         }         .popup-table tr:last-child td {             border-bottom: none;         }     </style>     <div class='popup-container'>     <table class='popup-table'>         <tr>             <td><b>Variables Psicoambientales Implicadas En La Preocupacion Social Y En La Conducta Frente Al Maltrato Animal</b> (Universidad de La Laguna)<br>                 IP: <span style="color:blue; font-weight:bold;">Ana María Martín Rodríguez</span><br>                 Financiación: 61468 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=9" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Justicia. Retos De La Agenda 2030</b> (Universidad de la Laguna)<br>                 IP: <span style="color:blue; font-weight:bold;">Alicia González Navarro</span><br>                 Financiación: 62.315 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=36" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Aplicaciones De Tecnologias Cuanticas En Ciberseguridad</b> (Universidad de la Laguna)<br>                 IP: <span style="color:blue; font-weight:bold;">Pino Teresa Caballero Gil </span><br>                 Financiación: 125000 euros <br>                 Año: 2022<br>                 <a href="resumenes.html?id=72" target="_blank">Leer Resumen</a>             </td>         </tr></table></div></div>`)[0];
+                popup_1bf295b7e984591fbe7b3668f7b03574.setContent(html_4c6239727b42142941da9f2b7b57418d);
+            
+        
+
+        marker_e7c600168a08328b32d0085b598da56b.bindPopup(popup_1bf295b7e984591fbe7b3668f7b03574)
+        ;
+
+        
+    
+    
+                marker_e7c600168a08328b32d0085b598da56b.setIcon(icon_d48cb7f72432a2b7dba465dd44c829c4);
+            
+    
+            var marker_40d0508413edb74131a4b038a28348bc = L.marker(
+                [43.1828, -3.9878],
+                {
+}
+            ).addTo(marker_cluster_2c106be8b4cd4d84ff003833d950ff76);
+        
+    
+            var icon_971e29e987b67cc96fc8da4d0f40a2bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b38e3c21db334de5f453ddd6a81719ba = L.popup({
+  "maxWidth": 400,
+  "autoClose": false,
+  "closeOnClick": false,
+});
+
+        
+            
+                var html_7818a642ed4dcd9852727f629bbd289f = $(`<div id="html_7818a642ed4dcd9852727f629bbd289f" style="width: 100.0%; height: 100.0%;">     <style>         .popup-container {             max-height: 300px;             overflow-y: auto;         }         .popup-table {             font-family: Arial, sans-serif;             font-size: 12px;             border-collapse: collapse;             width: 100%;         }         .popup-table td {             border-bottom: 1px solid #ddd;             padding: 4px;         }         .popup-table tr:last-child td {             border-bottom: none;         }     </style>     <div class='popup-container'>     <table class='popup-table'>         <tr>             <td><b>Derecho Penal Y Distribucion De La Riqueza En La Sociedad Tecnologica (Ii)</b> (Universidad de Cantabria)<br>                 IP: <span style="color:blue; font-weight:bold;">Paz Mercedes de la Cuesta Aguado</span><br>                 Financiación: 43750 euros <br>                 Año: 2022<br>                 <a href="resumenes.html?id=61" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Inteligencia Artificial Juridica Y Estado De Derecho</b> (Universidad de Cantabria)<br>                 IP: <span style="color:blue; font-weight:bold;">José Ignacio Solar Cayon</span><br>                 Financiación: 40000 euros <br>                 Año: 2022<br>                 <a href="resumenes.html?id=62" target="_blank">Leer Resumen</a>             </td>         </tr></table></div></div>`)[0];
+                popup_b38e3c21db334de5f453ddd6a81719ba.setContent(html_7818a642ed4dcd9852727f629bbd289f);
+            
+        
+
+        marker_40d0508413edb74131a4b038a28348bc.bindPopup(popup_b38e3c21db334de5f453ddd6a81719ba)
+        ;
+
+        
+    
+    
+                marker_40d0508413edb74131a4b038a28348bc.setIcon(icon_971e29e987b67cc96fc8da4d0f40a2bc);
+            
+    
+            var marker_9fd7fd03e1597222e90f4c930dc4f709 = L.marker(
+                [41.8358, -4.3976],
+                {
+}
+            ).addTo(marker_cluster_2c106be8b4cd4d84ff003833d950ff76);
+        
+    
+            var icon_8c67b155b6d7d125245d4cd35b02af73 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b722097c7a86fbd437736b1616015655 = L.popup({
+  "maxWidth": 400,
+  "autoClose": false,
+  "closeOnClick": false,
+});
+
+        
+            
+                var html_7917df1895436e6fa30fcd65c1b6cfdf = $(`<div id="html_7917df1895436e6fa30fcd65c1b6cfdf" style="width: 100.0%; height: 100.0%;">     <style>         .popup-container {             max-height: 300px;             overflow-y: auto;         }         .popup-table {             font-family: Arial, sans-serif;             font-size: 12px;             border-collapse: collapse;             width: 100%;         }         .popup-table td {             border-bottom: 1px solid #ddd;             padding: 4px;         }         .popup-table tr:last-child td {             border-bottom: none;         }     </style>     <div class='popup-container'>     <table class='popup-table'>         <tr>             <td><b>Tecnicas Avanzadas De Inteligencia Artificial Para Detectar Y Combatir Ataques De Ciberseguridad Desconocidos Y Adversarios.</b> (Universidad de Valladolid)<br>                 IP: <span style="color:blue; font-weight:bold;">Juan Ignacio Rivas Sánchez</span><br>                 Financiación: 87782,0 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=0" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>El Derecho Procesal Civil Y Penal Desde La Perspectiva De La Union Europea: La Consolidacion Del Espacio De Libertad, Seguridad Y Justicia</b> (Universidad de Burgos)<br>                 IP: <span style="color:blue; font-weight:bold;">Mar Jimeno Bulnes</span><br>                 Financiación: 44770 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=22" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Desafios De Una Administracion Tributaria Mas Eficaz: Digitalizacion Inclusiva, Compliance, Y Mejoras En Seguridad Juridica</b> (Universidad de Salamanca)<br>                 IP: <span style="color:blue; font-weight:bold;">María Ángeles Guervós Maíllo</span><br>                 Financiación: 21.780 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=40" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Tratamiento Procesal De Los Delitos De Odio Cometidos A Traves De Medios Tecnologicos</b> (Universidad de Salamanca)<br>                 IP: <span style="color:blue; font-weight:bold;">Federico Bueno de Mata</span><br>                 Financiación: 30250 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=45" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Analisis Critico Del Derecho Penal De La Plutofilia (Plutopenal)</b> (Universidad de Salamanca)<br>                 IP: <span style="color:blue; font-weight:bold;">Ana Isabel Pérez Cepeda</span><br>                 Financiación: 50000 euros<br>                 Año: 2022<br>                 <a href="resumenes.html?id=76" target="_blank">Leer Resumen</a>             </td>         </tr></table></div></div>`)[0];
+                popup_b722097c7a86fbd437736b1616015655.setContent(html_7917df1895436e6fa30fcd65c1b6cfdf);
+            
+        
+
+        marker_9fd7fd03e1597222e90f4c930dc4f709.bindPopup(popup_b722097c7a86fbd437736b1616015655)
+        ;
+
+        
+    
+    
+                marker_9fd7fd03e1597222e90f4c930dc4f709.setIcon(icon_8c67b155b6d7d125245d4cd35b02af73);
+            
+    
+            var marker_a8f95a072ebd742ecf248021e6e272c8 = L.marker(
+                [39.2796, -3.0926],
+                {
+}
+            ).addTo(marker_cluster_2c106be8b4cd4d84ff003833d950ff76);
+        
+    
+            var icon_1191567868c6f58fd4648b49a441c5b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0dd9c1b95d4e0b4fb474d7fa9e624d68 = L.popup({
+  "maxWidth": 400,
+  "autoClose": false,
+  "closeOnClick": false,
+});
+
+        
+            
+                var html_f4b3e726afc05b023e0d146560fb1f81 = $(`<div id="html_f4b3e726afc05b023e0d146560fb1f81" style="width: 100.0%; height: 100.0%;">     <style>         .popup-container {             max-height: 300px;             overflow-y: auto;         }         .popup-table {             font-family: Arial, sans-serif;             font-size: 12px;             border-collapse: collapse;             width: 100%;         }         .popup-table td {             border-bottom: 1px solid #ddd;             padding: 4px;         }         .popup-table tr:last-child td {             border-bottom: none;         }     </style>     <div class='popup-container'>     <table class='popup-table'>         <tr>             <td><b>Historia Y Presente Del Control Social, Las Instituciones Punitivas Y Los Cuerpos De Seguridad En España (Siglos Xx-Xxi): Practicas, Discursos Y Representaciones Culturales</b> (Universidad de Castilla-La Mancha)<br>                 IP: <span style="color:blue; font-weight:bold;">Pedro Oliver Olmo</span><br>                 Financiación: 44165 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=21" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Gemelos Digitales Humanos Para Fomentar Un Comportamiento Prosocial</b> (Universidad de Castilla-La Mancha)<br>                 IP: <span style="color:blue; font-weight:bold;">Víctor Manuel López Jaquero</span><br>                 Financiación: 119500 euros<br>                 Año: 2022<br>                 <a href="resumenes.html?id=63" target="_blank">Leer Resumen</a>             </td>         </tr></table></div></div>`)[0];
+                popup_0dd9c1b95d4e0b4fb474d7fa9e624d68.setContent(html_f4b3e726afc05b023e0d146560fb1f81);
+            
+        
+
+        marker_a8f95a072ebd742ecf248021e6e272c8.bindPopup(popup_0dd9c1b95d4e0b4fb474d7fa9e624d68)
+        ;
+
+        
+    
+    
+                marker_a8f95a072ebd742ecf248021e6e272c8.setIcon(icon_1191567868c6f58fd4648b49a441c5b6);
+            
+    
+            var marker_038931e3101403d0a0f69ed641d86ff2 = L.marker(
+                [41.8205, 1.8677],
+                {
+}
+            ).addTo(marker_cluster_2c106be8b4cd4d84ff003833d950ff76);
+        
+    
+            var icon_74ec391d04df2ef1cb3cc134f57f48cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ac788511fc67281c74da0b93b5a2d923 = L.popup({
+  "maxWidth": 400,
+  "autoClose": false,
+  "closeOnClick": false,
+});
+
+        
+            
+                var html_69fe94f7a4b0ba7e3dc8ac6b7399c3c3 = $(`<div id="html_69fe94f7a4b0ba7e3dc8ac6b7399c3c3" style="width: 100.0%; height: 100.0%;">     <style>         .popup-container {             max-height: 300px;             overflow-y: auto;         }         .popup-table {             font-family: Arial, sans-serif;             font-size: 12px;             border-collapse: collapse;             width: 100%;         }         .popup-table td {             border-bottom: 1px solid #ddd;             padding: 4px;         }         .popup-table tr:last-child td {             border-bottom: none;         }     </style>     <div class='popup-container'>     <table class='popup-table'>         <tr>             <td><b>Uso De Sistemas Tecnologicos Avanzados Para Favorecer Entornos Escolares Libres De Violencia Y Promotores De Bienestar Y Salud Mental</b> (Universitat de Girona)<br>                 IP: <span style="color:blue; font-weight:bold;">Ferran Casas Aznar</span><br>                 Financiación: 66308 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=4" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Necesidades Y Derechos De Las Hijas E Hijos Del Feminicidio: Una Aproximacion Transdisciplinar A Las Consecuencias De La Violencia De Genero En El Contexto De La Covid-19</b> (Universitat Rovira i Virgili)<br>                 IP: <span style="color:blue; font-weight:bold;">Eva Zafra Aparici</span><br>                 Financiación: 50820 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=11" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Conduccion Autonoma Y Seguridad Juridica Del Transporte</b> (Universitat Autónoma de Barcelona)<br>                 IP: <span style="color:blue; font-weight:bold;">Josep María De Dios Marcer</span><br>                 Financiación: 47190 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=13" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Violencia Psicologica Para La Dominacion En Contextos Interpersonales Y Grupales</b> (Universidad de Barcelona)<br>                 IP: <span style="color:blue; font-weight:bold;">Alvaro Rodriguez Carballeira</span><br>                 Financiación: 46779 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=19" target="_blank">Leer Resumen</a>             </td>         </tr></table></div></div>`)[0];
+                popup_ac788511fc67281c74da0b93b5a2d923.setContent(html_69fe94f7a4b0ba7e3dc8ac6b7399c3c3);
+            
+        
+
+        marker_038931e3101403d0a0f69ed641d86ff2.bindPopup(popup_ac788511fc67281c74da0b93b5a2d923)
+        ;
+
+        
+    
+    
+                marker_038931e3101403d0a0f69ed641d86ff2.setIcon(icon_74ec391d04df2ef1cb3cc134f57f48cd);
+            
+    
+            var marker_89c6f403a193ad67e739b5865755333a = L.marker(
+                [39.4811, -6.3796],
+                {
+}
+            ).addTo(marker_cluster_2c106be8b4cd4d84ff003833d950ff76);
+        
+    
+            var icon_4fd682fb08be016b1a2d4b439ba3edd2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6ea1a2cf84d88ecef9b6dbb499867a52 = L.popup({
+  "maxWidth": 200,
+  "autoClose": false,
+  "closeOnClick": false,
+});
+
+        
+            
+                var html_903d2bdbfbcb97b0e2a0c946efbf0299 = $(`<div id="html_903d2bdbfbcb97b0e2a0c946efbf0299" style="width: 100.0%; height: 100.0%;">No hay proyectos registrados.</div>`)[0];
+                popup_6ea1a2cf84d88ecef9b6dbb499867a52.setContent(html_903d2bdbfbcb97b0e2a0c946efbf0299);
+            
+        
+
+        marker_89c6f403a193ad67e739b5865755333a.bindPopup(popup_6ea1a2cf84d88ecef9b6dbb499867a52)
+        ;
+
+        
+    
+    
+                marker_89c6f403a193ad67e739b5865755333a.setIcon(icon_4fd682fb08be016b1a2d4b439ba3edd2);
+            
+    
+            var marker_9ef9d6863809250db2b150bddabac249 = L.marker(
+                [42.5751, -8.1339],
+                {
+}
+            ).addTo(marker_cluster_2c106be8b4cd4d84ff003833d950ff76);
+        
+    
+            var icon_14c62f56b4c6effc74e7552b5e2316ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f70ab405b6694a33123a6d5e36c99865 = L.popup({
+  "maxWidth": 400,
+  "autoClose": false,
+  "closeOnClick": false,
+});
+
+        
+            
+                var html_c7d0b44360dd2ff5a685a11a41037970 = $(`<div id="html_c7d0b44360dd2ff5a685a11a41037970" style="width: 100.0%; height: 100.0%;">     <style>         .popup-container {             max-height: 300px;             overflow-y: auto;         }         .popup-table {             font-family: Arial, sans-serif;             font-size: 12px;             border-collapse: collapse;             width: 100%;         }         .popup-table td {             border-bottom: 1px solid #ddd;             padding: 4px;         }         .popup-table tr:last-child td {             border-bottom: none;         }     </style>     <div class='popup-container'>     <table class='popup-table'>         <tr>             <td><b>Mejora De La Seguridad En Carreteras A Traves De Tecnologias Enfocadas Al Digital Twin</b> (Universidad de Vigo)<br>                 IP: <span style="color:blue; font-weight:bold;">PEDRO ARIAS SANCHEZ</span><br>                 Financiación: 212.500 €<br>                 Año: 2022<br>                 <a href="resumenes.html?id=82" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Desigualdad Y Oportunidades: El Papel De La Inseguridad Economica, Las Politicas Laborales Y La Educacion</b> (Universidad de Vigo)<br>                 IP: <span style="color:blue; font-weight:bold;">Coral del Río Otero</span><br>                 Financiación: 62.500 euros<br>                 Año: 2022<br>                 <a href="resumenes.html?id=83" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Transformacion De La Seguridad Y La Convivencia En Las Ciudades Medias.</b> (Universidad de Coruña)<br>                 IP: <span style="color:blue; font-weight:bold;">Cristina Fernández Bessa</span><br>                 Financiación: 40.000 euros<br>                 Año: 2023<br>                 <a href="resumenes.html?id=114" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Mujeres Migrantes Y Trabajo Esencial En España. Implicaciones Para Las Politicas Migratorias, El Ejercicio De Derechos Y Los Cuidados Transnacionales En La Pospandemia</b> (Universidad de Coruña)<br>                 IP: <span style="color:blue; font-weight:bold;">A. Pérez Caramés </span><br>                 Financiación: 71.250 euros<br>                 Año: 2023<br>                 <a href="resumenes.html?id=115" target="_blank">Leer Resumen</a>             </td>         </tr></table></div></div>`)[0];
+                popup_f70ab405b6694a33123a6d5e36c99865.setContent(html_c7d0b44360dd2ff5a685a11a41037970);
+            
+        
+
+        marker_9ef9d6863809250db2b150bddabac249.bindPopup(popup_f70ab405b6694a33123a6d5e36c99865)
+        ;
+
+        
+    
+    
+                marker_9ef9d6863809250db2b150bddabac249.setIcon(icon_14c62f56b4c6effc74e7552b5e2316ff);
+            
+    
+            var marker_304729636f96182271b4f9c56fc15ff8 = L.marker(
+                [40.4168, -3.7038],
+                {
+}
+            ).addTo(marker_cluster_2c106be8b4cd4d84ff003833d950ff76);
+        
+    
+            var icon_4f360cd4b73bcaaf1709d90669388992 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_54362753cfdbdea0cc37c14295477615 = L.popup({
+  "maxWidth": 400,
+  "autoClose": false,
+  "closeOnClick": false,
+});
+
+        
+            
+                var html_4f8409201c8c52d8998aeee8d7b501c2 = $(`<div id="html_4f8409201c8c52d8998aeee8d7b501c2" style="width: 100.0%; height: 100.0%;">     <style>         .popup-container {             max-height: 300px;             overflow-y: auto;         }         .popup-table {             font-family: Arial, sans-serif;             font-size: 12px;             border-collapse: collapse;             width: 100%;         }         .popup-table td {             border-bottom: 1px solid #ddd;             padding: 4px;         }         .popup-table tr:last-child td {             border-bottom: none;         }     </style>     <div class='popup-container'>     <table class='popup-table'>         <tr>             <td><b>Desarrollo De Modelos De Comportamiento De Usuarios Vulnerables Mediante La Simulacion De Situaciones De Riesgo Potencial En Escenarios De Trafico Urbano Empleando Realidad Virtual</b> (Universidad Politécnica de Madrid)<br>                 IP: <span style="color:blue; font-weight:bold;">Francisco Javier Páez Ayuso</span><br>                 Financiación: 169400 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=1" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Resistencia Transformadora En Las Escuelas. Contranarrativas En La Educacion Para La Justicia Social</b> (Universidad Autónoma de Madrid)<br>                 IP: <span style="color:blue; font-weight:bold;">Francisco Javier Murillo Torrecilla</span><br>                 Financiación: 81070 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=2" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Simuladores De Conduccion Y Tecnologias Geoespaciales Para Estudios De Seguridad Vial</b> (Universidad Politécnica de Madrid)<br>                 IP: <span style="color:blue; font-weight:bold;">María Castro Malpica</span><br>                 Financiación: 146410 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=7" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Estrategias Transversales Para La Prevencion De La Delincuencia Economica Y La Corrupcion</b> (Universidad Complutense de Madrid)<br>                 IP: <span style="color:blue; font-weight:bold;">Íñigo Ortíz de Urbina Gimeno</span><br>                 Financiación: 25410 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=12" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Violencia Sexual Digital. Estudio De La Relacion Entre Las Tecnologias Digitales Y Las Practicas De Violencia Sexual Entre Jovenes.</b> (Universidad Complutense de Madrid)<br>                 IP: <span style="color:blue; font-weight:bold;">Elisa García Mingo</span><br>                 Financiación: 78650 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=14" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Representacion Mediatica De Las Autolesiones De Los Menores En Los Medios De Comunicacion Y Redes Sociales</b> (Universidad Rey Juan Carlos)<br>                 IP: <span style="color:blue; font-weight:bold;">Esther Martínez Pastor</span><br>                 Financiación: 52.635 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=26" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Conflictos Armados Y Crisis Humanitarias: Las Humanidades Y Ciencias Sociales Ante Los Desafios De La Seguridad Multidimensional</b> (Universidad Complutense de Madrid)<br>                 IP: <span style="color:blue; font-weight:bold;">LYDIA MARIA DE TIENDA PALOP</span><br>                 Financiación: 31.460 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=31" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Interaccion Humana Con Dispositivos Inteligentes En Dominios De Seguridad Y De Salud Digital</b> (Universidad Autonóma de Madrid)<br>                 IP: <span style="color:blue; font-weight:bold;">Javier Ortega García</span><br>                 Financiación: 220.220 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=38" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>El Espacio De Libertad, Seguridad Y Justicia En Tiempos Inciertos: Futuro Y Retos Juridicos</b> (Universidad Carlos III de Madrid)<br>                 IP: <span style="color:blue; font-weight:bold;">Francisco Javier Donaire Villa</span><br>                 Financiación: 57112 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=43" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Vigilancia Acustica Inteligente De Interiores Para El Analisis Y Modelado De Escenas Para La Deteccion De Comportamientos Anomalos De Personas Y Maquinas</b> (Universidad de Alcala)<br>                 IP: <span style="color:blue; font-weight:bold;">Manuel Rosa Zurera</span><br>                 Financiación: 217.800 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=48" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Desigualdades, Privilegios Y Justicia Global. Pautas Normativas Para Una Sociedad Inclusiva</b> (Agencia Estatal Consejo Superior de Investigaciones Cientificas (CSIC))<br>                 IP: <span style="color:blue; font-weight:bold;">Juan Carlos Velasco</span><br>                 Financiación: 27500 euros<br>                 Año: 2022<br>                 <a href="resumenes.html?id=50" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Hacia Una Corte Internacional De Justicia Del Siglo Xxi</b> (Universidad Autónoma de Madrid)<br>                 IP: <span style="color:blue; font-weight:bold;">Mº Soledad Torrecuadrada García-Lozano</span><br>                 Financiación: 46375 euros <br>                 Año: 2022<br>                 <a href="resumenes.html?id=52" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Conducta De Intervencion En El Ciberodio Y En La Difusion De Fake News: Predictores Longitudinales Entre Adolescentes</b> (Universidad Autónoma de Madrid)<br>                 IP: <span style="color:blue; font-weight:bold;">Manuel Gamez Guadix</span><br>                 Financiación: 71875 euros<br>                 Año: 2022<br>                 <a href="resumenes.html?id=53" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Ciberseguridad A Distancia</b> (Universidad Carlos III de Madrid)<br>                 IP: <span style="color:blue; font-weight:bold;">Juan Manuel Estevez Tapiador</span><br>                 Financiación: 112375 euros <br>                 Año: 2022<br>                 <a href="resumenes.html?id=54" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Identidades Colectivas Y Justicia Penal: Un Enfoque Interdisciplinar</b> (UNIVERSIDAD NACIONAL DE EDUCACION A DISTANCIA)<br>                 IP: <span style="color:blue; font-weight:bold;">José Nuñez Fernández</span><br>                 Financiación: 37.500 euros<br>                 Año: 2022<br>                 <a href="resumenes.html?id=86" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Perfiles De Riesgo Para La Revictimizacion En Violencia De Genero: Un Estudio Longitudinal</b> (Universidad Autónoma de Madrid)<br>                 IP: <span style="color:blue; font-weight:bold;">Natalia Redondo Rodriguez</span><br>                 Financiación: 63.375 euros<br>                 Año: 2023<br>                 <a href="resumenes.html?id=98" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Genero Y Sistemas De Seguridad Vial - Analisis Del Impacto De Las Variables De Genero En La Respuesta De Los Sistemas De Retencion A Frenadas De Emergencia</b> (Universidad Carlos III de Madrid)<br>                 IP: <span style="color:blue; font-weight:bold;">SILVIA  SANTOS CUADROS </span><br>                 Financiación: 62.500 euros<br>                 Año: 2023<br>                 <a href="resumenes.html?id=99" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Control Adaptativo De Dinamica De Flujos De Peatones Sobre Tecnologias Ultra-Wideband+B5G Para La Seguridad Y Eficiencia De Evacuaciones</b> (Universidad de Alcala)<br>                 IP: <span style="color:blue; font-weight:bold;">Miguel Ángel López Carmona</span><br>                 Financiación: 145.000 euros<br>                 Año: 2023<br>                 <a href="resumenes.html?id=100" target="_blank">Leer Resumen</a>             </td>         </tr></table></div></div>`)[0];
+                popup_54362753cfdbdea0cc37c14295477615.setContent(html_4f8409201c8c52d8998aeee8d7b501c2);
+            
+        
+
+        marker_304729636f96182271b4f9c56fc15ff8.bindPopup(popup_54362753cfdbdea0cc37c14295477615)
+        ;
+
+        
+    
+    
+                marker_304729636f96182271b4f9c56fc15ff8.setIcon(icon_4f360cd4b73bcaaf1709d90669388992);
+            
+    
+            var marker_ed5b69f8391c784882cf55006212e927 = L.marker(
+                [37.9922, -1.1307],
+                {
+}
+            ).addTo(marker_cluster_2c106be8b4cd4d84ff003833d950ff76);
+        
+    
+            var icon_aa75f1e5304e31ea175b3d56913ff790 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_62a9d6eff022a792adfe4f6065e3efc7 = L.popup({
+  "maxWidth": 400,
+  "autoClose": false,
+  "closeOnClick": false,
+});
+
+        
+            
+                var html_0038614acde68a5612036046aabfca65 = $(`<div id="html_0038614acde68a5612036046aabfca65" style="width: 100.0%; height: 100.0%;">     <style>         .popup-container {             max-height: 300px;             overflow-y: auto;         }         .popup-table {             font-family: Arial, sans-serif;             font-size: 12px;             border-collapse: collapse;             width: 100%;         }         .popup-table td {             border-bottom: 1px solid #ddd;             padding: 4px;         }         .popup-table tr:last-child td {             border-bottom: none;         }     </style>     <div class='popup-container'>     <table class='popup-table'>         <tr>             <td><b>Gestion Robusta, Interpretable Y Orientada A Humanos De La Ciberseguridad Y La Seguridad En La Industria 5.0</b> (Universidad de Murcia)<br>                 IP: <span style="color:blue; font-weight:bold;">Félix Jesús García Clemente</span><br>                 Financiación: 220704 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=6" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Derecho Global Y Crisis Sanitarias: Hacia Una Convencion Mundial Contra Las Pandemias</b> (Universidad de Murcia)<br>                 IP: <span style="color:blue; font-weight:bold;">Esperanza Castellanos Ruiz</span><br>                 Financiación: 49.852 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=24" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Respuestas Juridicas Y Criminologicas A Los Delitos Cometidos Por Menores De Edad Con Trastorno Por Deficit De Atencion E Hiperactividad (Tdah)</b> (Universidad de Murcia)<br>                 IP: <span style="color:blue; font-weight:bold;">David Lorenzo Morillas Fernández</span><br>                 Financiación: 33125 euros <br>                 Año: 2022<br>                 <a href="resumenes.html?id=74" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Herramientas Para El Ejercicio De Los Derechos Laborales De Mujeres En Riesgo De Exclusion</b> (Universidad Politécnica de Cartagena)<br>                 IP: <span style="color:blue; font-weight:bold;">Djamil Tony Kahale Carrillo</span><br>                 Financiación: 45.000 euros<br>                 Año: 2023<br>                 <a href="resumenes.html?id=112" target="_blank">Leer Resumen</a>             </td>         </tr></table></div></div>`)[0];
+                popup_62a9d6eff022a792adfe4f6065e3efc7.setContent(html_0038614acde68a5612036046aabfca65);
+            
+        
+
+        marker_ed5b69f8391c784882cf55006212e927.bindPopup(popup_62a9d6eff022a792adfe4f6065e3efc7)
+        ;
+
+        
+    
+    
+                marker_ed5b69f8391c784882cf55006212e927.setIcon(icon_aa75f1e5304e31ea175b3d56913ff790);
+            
+    
+            var marker_e3e289cd5387b75147c6e52094941c50 = L.marker(
+                [42.6954, -1.6761],
+                {
+}
+            ).addTo(marker_cluster_2c106be8b4cd4d84ff003833d950ff76);
+        
+    
+            var icon_bac00aa561fbc24b262dfa3863f00aae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a462956c1afadc01141ca7e34442763f = L.popup({
+  "maxWidth": 400,
+  "autoClose": false,
+  "closeOnClick": false,
+});
+
+        
+            
+                var html_7ff017fb659c5e2fafd2f92532d240d1 = $(`<div id="html_7ff017fb659c5e2fafd2f92532d240d1" style="width: 100.0%; height: 100.0%;">     <style>         .popup-container {             max-height: 300px;             overflow-y: auto;         }         .popup-table {             font-family: Arial, sans-serif;             font-size: 12px;             border-collapse: collapse;             width: 100%;         }         .popup-table td {             border-bottom: 1px solid #ddd;             padding: 4px;         }         .popup-table tr:last-child td {             border-bottom: none;         }     </style>     <div class='popup-container'>     <table class='popup-table'>         <tr>             <td><b>Efectividad De Un Programa Breve Para La Prevencion Selectiva Del Comportamiento Suicida En Personas En Tratamiento Por Trastornos Relacionados Con Sustancias</b> (Universidad Pública de Navarra)<br>                 IP: <span style="color:blue; font-weight:bold;">Jose Javier López Goñi </span><br>                 Financiación: 77.375 euros<br>                 Año: 2023<br>                 <a href="resumenes.html?id=113" target="_blank">Leer Resumen</a>             </td>         </tr></table></div></div>`)[0];
+                popup_a462956c1afadc01141ca7e34442763f.setContent(html_7ff017fb659c5e2fafd2f92532d240d1);
+            
+        
+
+        marker_e3e289cd5387b75147c6e52094941c50.bindPopup(popup_a462956c1afadc01141ca7e34442763f)
+        ;
+
+        
+    
+    
+                marker_e3e289cd5387b75147c6e52094941c50.setIcon(icon_bac00aa561fbc24b262dfa3863f00aae);
+            
+    
+            var marker_691c8889412ecab5f61b0d137a211ba3 = L.marker(
+                [42.2871, -2.5396],
+                {
+}
+            ).addTo(marker_cluster_2c106be8b4cd4d84ff003833d950ff76);
+        
+    
+            var icon_31ab9f7e748871c89fb9a83824ed918b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_06d62cd5c47b231f3018fe13fb25c552 = L.popup({
+  "maxWidth": 200,
+  "autoClose": false,
+  "closeOnClick": false,
+});
+
+        
+            
+                var html_98bdd1acf47cc7ce66308ce66d015823 = $(`<div id="html_98bdd1acf47cc7ce66308ce66d015823" style="width: 100.0%; height: 100.0%;">No hay proyectos registrados.</div>`)[0];
+                popup_06d62cd5c47b231f3018fe13fb25c552.setContent(html_98bdd1acf47cc7ce66308ce66d015823);
+            
+        
+
+        marker_691c8889412ecab5f61b0d137a211ba3.bindPopup(popup_06d62cd5c47b231f3018fe13fb25c552)
+        ;
+
+        
+    
+    
+                marker_691c8889412ecab5f61b0d137a211ba3.setIcon(icon_31ab9f7e748871c89fb9a83824ed918b);
+            
+    
+            var marker_6761fb0953e86857bb70c9332040484b = L.marker(
+                [43.065, -2.5895],
+                {
+}
+            ).addTo(marker_cluster_2c106be8b4cd4d84ff003833d950ff76);
+        
+    
+            var icon_c09da235123b3f1d5507da5fa2063c09 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44486ac0b3c5c2d607abb0a7176bc877 = L.popup({
+  "maxWidth": 400,
+  "autoClose": false,
+  "closeOnClick": false,
+});
+
+        
+            
+                var html_4d8dffc000eb62683f45e0557eb5f2ca = $(`<div id="html_4d8dffc000eb62683f45e0557eb5f2ca" style="width: 100.0%; height: 100.0%;">     <style>         .popup-container {             max-height: 300px;             overflow-y: auto;         }         .popup-table {             font-family: Arial, sans-serif;             font-size: 12px;             border-collapse: collapse;             width: 100%;         }         .popup-table td {             border-bottom: 1px solid #ddd;             padding: 4px;         }         .popup-table tr:last-child td {             border-bottom: none;         }     </style>     <div class='popup-container'>     <table class='popup-table'>         <tr>             <td><b>Condiciones De Seguridad De Periodistas Españoles Que Cubren Conflictos: Elementos Definitorios Y Analisis De Su Seguridad Antes, Durante Y Despues De La Cobertura</b> (Universidad del País Vasco)<br>                 IP: <span style="color:blue; font-weight:bold;">Leire Iturregui Mardaras</span><br>                 Financiación: 77319 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=10" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Resiliencia Del Derecho Antidiscriminatorio A Los Sesgos Y Estereotipos: Desafios Y Propuestas De Intervencion</b> (Universidad de la Iglesia de Deusto)<br>                 IP: <span style="color:blue; font-weight:bold;">Dolores Morondo Taramundi</span><br>                 Financiación: 41272 euros<br>                 Año: 2021<br>                 <a href="resumenes.html?id=18" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Ante La Tercera Brecha Digital De Genero Y Ciberviolencias En La Infancia: Coeducacion, Opotunidades Y Resistencias.</b> (Universidad de la Iglesia de Deusto )<br>                 IP: <span style="color:blue; font-weight:bold;">Estibaliz Linares Bahillo</span><br>                 Financiación: 134000 euros <br>                 Año: 2022<br>                 <a href="resumenes.html?id=69" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Derecho Penal De Clase: Propuestas De Lege Lata Y De Lege Ferenda</b> (Universidad de la Iglesia de Deusto )<br>                 IP: <span style="color:blue; font-weight:bold;">Demelsa Benito Sánchez</span><br>                 Financiación: 42500 euros <br>                 Año: 2022<br>                 <a href="resumenes.html?id=70" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>Nuevos Retos Y Perspectivas En El Estudio De La Violencia Filio-Parental: Factores De Proteccion Y Desistimiento En Poblacion General Y Clinica</b> (Universidad de la Iglesia de Deusto )<br>                 IP: <span style="color:blue; font-weight:bold;">Liria Fernández González</span><br>                 Financiación: 100000 euros <br>                 Año: 2022<br>                 <a href="resumenes.html?id=71" target="_blank">Leer Resumen</a>             </td>         </tr>         <tr>             <td><b>El Derecho Penal Y La Criminologia Ante Los Nuevos Desafios De La Criminalidad Climatica: Hacia Una Justicia Climatica Al Servicio De Los Derechos Humanos</b> (UNIVERSIDAD DEL PAIS VASCO EUSKAL HERRIKO UNIBERTSITATEA)<br>                 IP: <span style="color:blue; font-weight:bold;">Ana Isabel Pérez Machío</span><br>                 Financiación: 48.750 euros<br>                 Año: 2023<br>                 <a href="resumenes.html?id=111" target="_blank">Leer Resumen</a>             </td>         </tr></table></div></div>`)[0];
+                popup_44486ac0b3c5c2d607abb0a7176bc877.setContent(html_4d8dffc000eb62683f45e0557eb5f2ca);
+            
+        
+
+        marker_6761fb0953e86857bb70c9332040484b.bindPopup(popup_44486ac0b3c5c2d607abb0a7176bc877)
+        ;
+
+        
+    
+    
+                marker_6761fb0953e86857bb70c9332040484b.setIcon(icon_c09da235123b3f1d5507da5fa2063c09);
+            
+    
+            var marker_c29d8e2ad52f68d79c89f6db1d51cb8b = L.marker(
+                [39.484, -0.7533],
+                {
+}
+            ).addTo(marker_cluster_2c106be8b4cd4d84ff003833d950ff76);
+        
+    
+            var icon_7a8803b06834ea9298d625450f208e73 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2130457d754d5560479b53ec335a53d6 = L.popup({
+  "maxWidth": 200,
+  "autoClose": false,
+  "closeOnClick": false,
+});
+
+        
+            
+                var html_0282084a241196e60b900c25e76eabae = $(`<div id="html_0282084a241196e60b900c25e76eabae" style="width: 100.0%; height: 100.0%;">No hay proyectos registrados.</div>`)[0];
+                popup_2130457d754d5560479b53ec335a53d6.setContent(html_0282084a241196e60b900c25e76eabae);
+            
+        
+
+        marker_c29d8e2ad52f68d79c89f6db1d51cb8b.bindPopup(popup_2130457d754d5560479b53ec335a53d6)
+        ;
+
+        
+    
+    
+                marker_c29d8e2ad52f68d79c89f6db1d51cb8b.setIcon(icon_7a8803b06834ea9298d625450f208e73);
+            
+    
+            marker_cluster_2c106be8b4cd4d84ff003833d950ff76.addTo(map_dc5ce17df1a3ce0959b8e72365dac83e);
+        
+</script>
+</html>
